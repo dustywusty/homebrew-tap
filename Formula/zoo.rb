@@ -5,20 +5,20 @@
 class Zoo < Formula
   desc "Run AI coding agents in sandboxed VMs and containers"
   homepage "https://github.com/dustywusty/zoo"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dustywusty/zoo/releases/download/v0.1.0/zoo_0.1.0_darwin_amd64.tar.gz"
-      sha256 "215f8056a775aa7ce8ea37f7f0747f93160d737eb00a653bdc1523a9ede74265"
+      url "https://github.com/dustywusty/zoo/releases/download/v0.1.1/zoo_0.1.1_darwin_amd64.tar.gz"
+      sha256 "1472c25719e263434db7e7966e4ae86808f0b44048af667f4100267e095280cf"
 
       define_method(:install) do
         bin.install "zoo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dustywusty/zoo/releases/download/v0.1.0/zoo_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c012249aa66be10e17b5dcf39318b5edbb4a815a26cf656fa31fd7327bceed18"
+      url "https://github.com/dustywusty/zoo/releases/download/v0.1.1/zoo_0.1.1_darwin_arm64.tar.gz"
+      sha256 "3a16d38070d785dfef78d02facd83a3c8f9a11ab08fd1e6a046b43cd1296b99e"
 
       define_method(:install) do
         bin.install "zoo"
@@ -28,15 +28,15 @@ class Zoo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dustywusty/zoo/releases/download/v0.1.0/zoo_0.1.0_linux_amd64.tar.gz"
-      sha256 "c5fdcd896c28b67be22872e3c2efb4e55a6bbbace21ee52a20aca2f7d9f2f444"
+      url "https://github.com/dustywusty/zoo/releases/download/v0.1.1/zoo_0.1.1_linux_amd64.tar.gz"
+      sha256 "831619d753044564df3496d7b179a5bc6c6038a89f658ca79736c1d895accf56"
       define_method(:install) do
         bin.install "zoo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dustywusty/zoo/releases/download/v0.1.0/zoo_0.1.0_linux_arm64.tar.gz"
-      sha256 "71b370d46eddc95f9be1a6cf77552854d88e627bc6fa87cc6f22387811e81a86"
+      url "https://github.com/dustywusty/zoo/releases/download/v0.1.1/zoo_0.1.1_linux_arm64.tar.gz"
+      sha256 "4c910de33d9d1a33d8026a5da3eff6299b5725d91f522ec61feb2fa6bbb4e457"
       define_method(:install) do
         bin.install "zoo"
       end
